@@ -1,159 +1,189 @@
-{% extends 'base.html' %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Information — Imperial Kingdoms of Nesforvia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/coat-of-arms.png">
+</head>
 
-{% block title %}
-Information — Imperial Kingdoms of Nesforvia
-{% endblock %}
+<body>
 
-{% block content %}
-
-<section class="page-hero info-hero">
-    <div>
-        <p class="eyebrow">Imperial information</p>
-
-        <h1>About the Imperial Kingdoms of Nesforvia</h1>
-
-        <p>
-            The Imperial Kingdoms of Nesforvia is an environmentalist two-leader empire led by
-            Emperor Doom and Emperor Max I. It was formed through the unification of Garforvia
-            and Nesfield, and now works with three member states: the Starian-Trosso Union,
-            the Republic of Pinland, and the Great Velkar Union.
-        </p>
+    <div class="notice">
+        Welcome to the Imperial Kingdoms of Nesforvia.
     </div>
-</section>
 
+    <header class="topbar">
+        <a class="brand" href="index.html">
+            <img src="images/coat-of-arms.png" alt="Nesforvia coat of arms">
+            <span>IMPERIAL KINGDOMS<br>OF NESFORVIA</span>
+        </a>
 
-<section class="info-block">
-    <h2>National overview</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="information.html">Information</a>
+            <a href="https://api.nesforvia.com/news">News</a>
+            <a href="https://api.nesforvia.com/citizenship">Citizenship</a>
+            <a href="https://api.nesforvia.com/passport">Passports</a>
+            <a href="https://api.nesforvia.com/elections">Elections</a>
+            <a href="https://api.nesforvia.com/admin">Admin</a>
+        </nav>
+    </header>
 
-    <div class="overview-grid">
-        <img class="overview-flag"
-             src="images/nesforvia-flag.png"
-             alt="Nesforvian flag">
+    <main>
 
-        <div>
-            <p>
-                The Nesforvian flag is mainly green and carries the White Rose of Nesforvia.
-                The green theme represents the empire's environmentalist direction, while the
-                white rose acts as the central national symbol.
-            </p>
-
-            <p>
-                Nesforvia is also setting up a new province called
-                <b>The Republic of Serarin (ROS)</b>. Its purpose is to oppose the feud with the
-                <b>United Seranese Peoples Republics (USPR)</b>, described by Nesforvia as a
-                dictatorship that censors its public.
-            </p>
-        </div>
-    </div>
-</section>
-
-
-<section class="info-block">
-    <h2>Member states</h2>
-
-    <div class="state-grid">
-
-        <article class="state-card">
-            <img src="images/pinland-flag.png"
-                 alt="Republic of Pinland flag">
-
+        <section class="page-hero info-hero">
             <div>
-                <h3>The Republic of Pinland</h3>
-                <p><b>Status:</b> IKN member state</p>
+                <p class="eyebrow">Imperial information</p>
+
+                <h1>About the Imperial Kingdoms of Nesforvia</h1>
 
                 <p>
-                    Pinland is close to Liverpool and is described as a strong micronation
-                    with a libertarian ideology. Its flag uses the White Rose of Nesforvia,
-                    a star above it, and blue, black and yellow as its main colours.
-                </p>
-
-                <p class="meta">
-                    <b>Leader:</b> @theamazingperson7646 (Elijah)
+                    The Imperial Kingdoms of Nesforvia is an environmentalist two-leader empire led by
+                    Emperor Doom and Emperor Max I. It was formed through the unification of Garforvia
+                    and Nesfield, and now works with three member states: the Starian-Trosso Union,
+                    the Republic of Pinland, and the Great Velkar Union.
                 </p>
             </div>
-        </article>
+        </section>
 
 
-        <article class="state-card">
-            <img src="images/stu-flag.png"
-                 alt="Starian-Trosso Union flag">
+        <section class="info-block">
+            <h2>National overview</h2>
 
-            <div>
-                <h3>Starian-Trosso Union (S-TU)</h3>
-                <p><b>Status:</b> IKN member state</p>
+            <div class="overview-grid">
+                <img class="overview-flag" src="images/nesforvia-flag.png" alt="Nesforvian flag">
 
-                <p>
-                    The S-TU is made from two unified micronations: Staria and Trosso.
-                    Both are imperial. Its flag has two white triangles facing inward
-                    towards a central circle, wreath, star, and dark blue as the main colour.
-                </p>
+                <div>
+                    <p>
+                        The Nesforvian flag is mainly green and carries the White Rose of Nesforvia.
+                        The green theme represents the empire's environmentalist direction, while the
+                        white rose acts as the central national symbol.
+                    </p>
 
-                <p class="meta">
-                    <b>Leader:</b> @jake663723 (ʙᴏx.)
-                </p>
+                    <p>
+                        Nesforvia is also setting up a new province called
+                        <b>The Republic of Serarin (ROS)</b>. Its purpose is to oppose the feud with the
+                        <b>United Seranese Peoples Republics (USPR)</b>, described by Nesforvia as a
+                        dictatorship that censors its public.
+                    </p>
+                </div>
             </div>
-        </article>
+        </section>
 
 
-        <article class="state-card">
-            <img src="images/gvu-flag.png"
-                 alt="Great Velkar Union flag">
+        <section class="info-block">
+            <h2>Member states</h2>
 
-            <div>
-                <h3>Great Velkar Union (GVU)</h3>
-                <p><b>Status:</b> IKN member state</p>
+            <div class="state-grid">
 
-                <p>
-                    The GVU was previously a dictatorship, but it is being revamped
-                    to fit the style and direction of the Imperial Kingdoms of Nesforvia.
-                    Its flag uses purple and black with a Nordic-style shape.
-                </p>
+                <article class="state-card">
+                    <img src="images/pinland-flag.png" alt="Republic of Pinland flag">
 
-                <p class="meta">
-                    <b>Leader:</b> @thegreatvelkarunion (Leader of Velkar)
-                </p>
+                    <div>
+                        <h3>The Republic of Pinland</h3>
+                        <p><b>Status:</b> IKN member state</p>
+
+                        <p>
+                            Pinland is close to Liverpool and is described as a strong micronation
+                            with a libertarian ideology. Its flag uses the White Rose of Nesforvia,
+                            a star above it, and blue, black and yellow as its main colours.
+                        </p>
+
+                        <p class="meta">
+                            <b>Leader:</b> @theamazingperson7646 (Elijah)
+                        </p>
+                    </div>
+                </article>
+
+
+                <article class="state-card">
+                    <img src="images/stu-flag.png" alt="Starian-Trosso Union flag">
+
+                    <div>
+                        <h3>Starian-Trosso Union (S-TU)</h3>
+                        <p><b>Status:</b> IKN member state</p>
+
+                        <p>
+                            The S-TU is made from two unified micronations: Staria and Trosso.
+                            Both are imperial. Its flag has two white triangles facing inward
+                            towards a central circle, wreath, star, and dark blue as the main colour.
+                        </p>
+
+                        <p class="meta">
+                            <b>Leader:</b> @jake663723 (ʙᴏx.)
+                        </p>
+                    </div>
+                </article>
+
+
+                <article class="state-card">
+                    <img src="images/gvu-flag.png" alt="Great Velkar Union flag">
+
+                    <div>
+                        <h3>Great Velkar Union (GVU)</h3>
+                        <p><b>Status:</b> IKN member state</p>
+
+                        <p>
+                            The GVU was previously a dictatorship, but it is being revamped
+                            to fit the style and direction of the Imperial Kingdoms of Nesforvia.
+                            Its flag uses purple and black with a Nordic-style shape.
+                        </p>
+
+                        <p class="meta">
+                            <b>Leader:</b> @thegreatvelkarunion (Leader of Velkar)
+                        </p>
+                    </div>
+                </article>
+
             </div>
-        </article>
-
-    </div>
-</section>
+        </section>
 
 
-<section class="info-block">
-    <h2>Nesforvian provinces</h2>
+        <section class="info-block">
+            <h2>Nesforvian provinces</h2>
 
-    <div class="grid">
+            <div class="grid">
 
-        <article class="card">
-            <h3>Garforvia</h3>
+                <article class="card">
+                    <h3>Garforvia</h3>
 
-            <p>
-                Garforvia is a Nesforvian province and was once a micronation.
-                It unified with Nesfield to create Nesforvia. It is located in Altofts,
-                West Yorkshire, near Wakefield and Leeds, and borders Normanton.
-            </p>
+                    <p>
+                        Garforvia is a Nesforvian province and was once a micronation.
+                        It unified with Nesfield to create Nesforvia. It is located in Altofts,
+                        West Yorkshire, near Wakefield and Leeds, and borders Normanton.
+                    </p>
 
-            <p class="meta">
-                <b>Ran by:</b> @max_d_evans (Emperor Max I)
-            </p>
-        </article>
+                    <p class="meta">
+                        <b>Ran by:</b> @max_d_evans (Emperor Max I)
+                    </p>
+                </article>
 
 
-        <article class="card">
-            <h3>Nesfield</h3>
+                <article class="card">
+                    <h3>Nesfield</h3>
 
-            <p>
-                Nesfield is a Nesforvian province. It had not previously operated
-                as a micronation, but unified with Garforvia to create Nesforvia.
-                It is located in Belle Isle, Leeds.
-            </p>
+                    <p>
+                        Nesfield is a Nesforvian province. It had not previously operated
+                        as a micronation, but unified with Garforvia to create Nesforvia.
+                        It is located in Belle Isle, Leeds.
+                    </p>
 
-            <p class="meta">
-                <b>Ran by:</b> @.oliver2025 (Emperor Doom)
-            </p>
-        </article>
+                    <p class="meta">
+                        <b>Ran by:</b> @.oliver2025 (Emperor Doom)
+                    </p>
+                </article>
 
-    </div>
-</section>
+            </div>
+        </section>
 
-{% endblock %}
+    </main>
+
+    <footer>
+        <b>Imperial Kingdoms of Nesforvia</b><br>
+        Official government information and services online.
+    </footer>
+
+</body>
+</html>
