@@ -1,1 +1,28 @@
-{% extends 'base.html' %}{% block content %}<h1>Apply for {{ kind|title }}</h1><form method="post" enctype="multipart/form-data" class="form"><label>Full name<input name="full_name" required></label><label>Email<input name="email" type="email" required></label><label>Date of birth<input name="dob" type="date"></label><label>Discord username<input name="discord"></label><label>Why are you applying?<textarea name="reason" required></textarea></label><label>Optional image/document upload<input name="file" type="file"></label><button>Submit application</button></form>{% endblock %}
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Apply for {{ kind|title }}</h1>
+
+<form method="post" action="{{ url_for(kind) }}" class="form">
+
+    <label>
+        Full name
+        <input name="name" required>
+    </label>
+
+    <label>
+        Email
+        <input name="email" type="email" required>
+    </label>
+
+    <label>
+        Why are you applying?
+        <textarea name="reason" required></textarea>
+    </label>
+
+    <button>Submit application</button>
+
+</form>
+
+{% endblock %}
