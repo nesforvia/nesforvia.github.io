@@ -1,6 +1,5 @@
-{% extends 'base.html' %}
+
 <link rel="stylesheet" href="./styles.css">
-{% block content %}
 
 <section class="hero">
     <div>
@@ -40,15 +39,10 @@
 <h2>Latest news</h2>
 
 <section class="news-list">
-    {% for n in latest_news %}
         <article>
             <h3>{{ n.title }}</h3>
             <p class="meta">{{ n.created_at }}</p>
             <p>{{ n.body[:180] }}...</p>
         </article>
-    {% else %}
         <p>No news has been posted yet.</p>
-    {% endfor %}
 </section>
-
-{% endblock %}
