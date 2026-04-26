@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Imperial Kingdoms of Nesforvia{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='coat-of-arms.png') }}">
+</head>
+<body>
+  <div class="notice">{{ notice }}</div>
+  <header class="topbar">
+    <a class="brand" href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='coat-of-arms.png') }}" alt="Nesforvia coat of arms"><span>IMPERIAL KINGDOMS<br>OF NESFORVIA</span></a>
+    <nav><a href="/">Home</a><a href="/information">Information</a><a href="/news">News</a><a href="/apply/citizenship">Citizenship</a><a href="/apply/passport">Passports</a><a href="/elections">Elections</a><a href="/admin/login">Admin</a></nav>
+  </header>
+  {% with messages = get_flashed_messages() %}{% if messages %}<div class="flash">{{ messages[0] }}</div>{% endif %}{% endwith %}
+  <main>{% block content %}{% endblock %}</main>
+  <footer><b>Imperial Kingdoms of Nesforvia</b><br>Official government information and services online.</footer>
+</body>
+</html>
